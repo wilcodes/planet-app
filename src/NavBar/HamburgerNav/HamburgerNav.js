@@ -1,8 +1,8 @@
 import React, {useState} from "react";
 import {Burger} from "./Burger";
-import {NavigationBurger} from "./NavigationBurger";
+import {NavigationBurger} from "../NavigationBurger";
 import {NavTitle} from "./NavTitle";
-import {Divider} from "./Divider";
+import {Divider} from "../Divider";
 
 const HamburgerNav = ()=>{
 

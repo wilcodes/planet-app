@@ -1,14 +1,14 @@
 import React from "react";
-import NavBar from "./NavBar/HamburgerNav/NavBar";
 import {GlobalStyles} from "./GlobalStyles";
 import HamburgerNav from "./NavBar/HamburgerNav/HamburgerNav";
+import SubNavBar from "./NavBar/SubNavBar/SubNavBar";
 const App = () =>{
 
   return(
       <div>
-          <NavBar/>
-          <HamburgerNav/>
           <GlobalStyles/>
+          <HamburgerNav/>
+          <SubNavBar/>
       </div>
   )
 }
