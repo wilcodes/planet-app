@@ -12,7 +12,7 @@ const App = () =>{
          < Dots />
           <GlobalStyles/>
               <HamburgerNav/>
-              <SubNavBar planetDetail={(planetD)=>setPlanetDetails(planetD)}/>
+              <SubNavBar planetDetail={(planetD)=>setPlanetDetails(planetD)} userDecision={planetDetails}/>
               <MainSection planetDetail={planetDetails}/>
               <PlanetSubDetails/>
       </>

@@ -8,7 +8,7 @@ import {ColorIndicator} from "./ColorIndicator";
 
 const SubNavBar = (props) =>{
 
-    const [currentInformation, setCurrentInformation]= useState("overview")
+    const [currentInformation]= useState("overview")
 
 
     return(
@@ -16,13 +16,16 @@ const SubNavBar = (props) =>{
             <NavigationBurger navType="subNavigation" >
                 <Element onClick={()=>props.planetDetail("overview")}>
                     Overview
-                    <ColorIndicator/>
+                    {props.userDecision === "overview" && (<ColorIndicator active={currentInformation}/>)}
                 </Element>
                 <Element onClick={()=>props.planetDetail("structure")} >
                     Structure
+                    {props.userDecision === "structure" && (<ColorIndicator active={currentInformation}/>)}
                 </Element>
+
                 <Element onClick={()=>props.planetDetail("surface")} >
                     Surface
+                    {props.userDecision === "surface" && (<ColorIndicator active={currentInformation}/>)}
                 </Element>
             </NavigationBurger>
             <Divider/>
