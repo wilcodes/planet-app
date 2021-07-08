@@ -32,7 +32,7 @@ export const Link = styled.a`
   mix-blend-mode: normal;
   opacity: 0.5;
   margin-top: 0.85em;
-  margin-left: 0.2em;
+  margin-left: 0.3em;
   text-decoration: underline;
 `
 
