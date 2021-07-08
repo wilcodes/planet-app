@@ -1,11 +1,22 @@
 import React from "react";
 import {Title, Text, Link, Wrapper} from "./DescriptionStyles"
 import { TiArrowRightThick } from "react-icons/ti";
-const PlanetDescription = () =>{
+import {earth} from "../../planetsData/planetsData";
+
+const PlanetDescription = ({planetDetail}) =>{
+    const textRender=(userChoice)=>{
+        if (userChoice==="overview"){
+            return(<Text>{earth.overview}</Text>)
+        }else if(userChoice ==="surface"){
+            return(<Text>{earth.surface}</Text>)
+        }else if (userChoice === "structure"){
+            return(<Text>{earth.internalStructure}</Text>)
+        }
+    }
     return(
         <Wrapper direction={"column"} >
-            <Title>Earth</Title>
-            <Text>Third planet from the Sun and the only known planet to harbor life. About 29.2% of Earth's surface is land with remaining 70.8% is covered with water. Earth's distance from the Sun, physical properties and geological history have allowed life to evolve and thrive. </Text>
+            <Title>{earth.name}</Title>
+            {textRender(planetDetail)}
               <Wrapper >
                   <Text style={{opacity:"0.5", mixBlend: "normal"}}>Source:</Text> <Link>Wiki <TiArrowRightThick style={{position:"relative", top:"3px", left:"1px", width:"15px", height: "15px"}}/> </Link>
               </Wrapper>

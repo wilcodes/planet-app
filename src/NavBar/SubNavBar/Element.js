@@ -13,5 +13,6 @@ export const Element= styled.li`
   letter-spacing: 1.92857px;
   color: #FFFFFF;
   mix-blend-mode: normal;
-  opacity: 0.5
+  opacity: 0.5;
+  cursor:pointer;
 `

@@ -1,28 +1,31 @@
-import React from "react";
+import React, {useState, useContext} from "react";
 import {NavigationBurger} from "../NavigationBurger";
 import {Divider} from "../Divider";
 import {Element} from "./Element";
 import {ColorIndicator} from "./ColorIndicator";
 
-const SubNavBar = () =>{
+
+
+const SubNavBar = (props) =>{
+
+    const [currentInformation, setCurrentInformation]= useState("overview")
+
+
     return(
         <>
-
-            <NavigationBurger navType="subNavigation">
-                <Element>
+            <NavigationBurger navType="subNavigation" >
+                <Element onClick={()=>props.planetDetail("overview")}>
                     Overview
                     <ColorIndicator/>
                 </Element>
-                <Element>
+                <Element onClick={()=>props.planetDetail("structure")} >
                     Structure
                 </Element>
-                <Element>
+                <Element onClick={()=>props.planetDetail("surface")} >
                     Surface
                 </Element>
             </NavigationBurger>
-
             <Divider/>
-
         </>
     )
 }
