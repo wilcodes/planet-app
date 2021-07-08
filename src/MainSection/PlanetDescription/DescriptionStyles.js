@@ -43,7 +43,6 @@ export const Text = styled.p`
   font-size: 11px;
   line-height: 22px;
   /* or 200% */
-  text-align: center;
   color: #FFFFFF;
-  
+  text-align: justify;
 `

@@ -4,7 +4,7 @@ import HamburgerNav from "./NavBar/HamburgerNav/HamburgerNav";
 import SubNavBar from "./NavBar/SubNavBar/SubNavBar";
 import Dots from "./Dots";
 import MainSection from "./MainSection/MainSection";
-import image from "./assets/planet-jupiter-internal.svg"
+import PlanetSubDetails from "./PlanetSubDetails/PlanetSubDetails";
 const App = () =>{
   return(
       <div>
@@ -13,7 +13,7 @@ const App = () =>{
           <HamburgerNav/>
           <SubNavBar/>
           <MainSection/>
-
+          <PlanetSubDetails/>
       </div>
   )
 }
