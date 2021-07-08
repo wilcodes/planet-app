@@ -14,6 +14,7 @@ export const Burger = styled.button`
   border: none;
   left: 1rem;
   margin-top: 3em;
+  margin-right: 1em;
   &:focus {
     outline: none;
   }

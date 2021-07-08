@@ -2,6 +2,7 @@ import React from "react";
 import {NavigationBurger} from "../NavigationBurger";
 import {Divider} from "../Divider";
 import {Element} from "./Element";
+import {ColorIndicator} from "./ColorIndicator";
 
 const SubNavBar = () =>{
     return(
@@ -10,6 +11,7 @@ const SubNavBar = () =>{
             <NavigationBurger navType="subNavigation">
                 <Element>
                     Overview
+                    <ColorIndicator/>
                 </Element>
                 <Element>
                     Structure
@@ -18,7 +20,9 @@ const SubNavBar = () =>{
                     Surface
                 </Element>
             </NavigationBurger>
+
             <Divider/>
+
         </>
     )
 }
