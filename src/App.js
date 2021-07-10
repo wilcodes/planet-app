@@ -6,14 +6,19 @@ import Dots from "./Dots";
 import MainSection from "./MainSection/MainSection";
 import PlanetSubDetails from "./PlanetSubDetails/PlanetSubDetails";
 const App = () =>{
-    const [planetDetails, setPlanetDetails]= useState('overview')
+    const [planetDetails, setPlanetDetails]= useState('overview');
+    const [currentPlanet, setCurretPlanet]= useState('earth');
   return(
       <>
          < Dots />
           <GlobalStyles/>
               <HamburgerNav/>
-              <SubNavBar planetDetail={(planetD)=>setPlanetDetails(planetD)} userDecision={planetDetails}/>
-              <MainSection planetDetail={planetDetails}/>
+              <SubNavBar
+                  planetDetail={(planetD)=>setPlanetDetails(planetD)}
+                  userDecision={planetDetails}
+                  currentPlanet={currentPlanet}
+              />
+              <MainSection planetDetail={planetDetails} currentPlanet={currentPlanet}/>
               <PlanetSubDetails/>
       </>
   )

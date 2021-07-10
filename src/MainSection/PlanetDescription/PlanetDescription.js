@@ -3,7 +3,7 @@ import {Title, Text, Link, Wrapper} from "./DescriptionStyles"
 import { TiArrowRightThick } from "react-icons/ti";
 import {earth} from "../../planetsData/planetsData";
 
-const PlanetDescription = ({planetDetail}) =>{
+const PlanetDescription = ({planetDetail, currentPlanet}) =>{
     const textRender=(userChoice)=>{
         if (userChoice==="overview"){
             return(<Text>{earth.overview}</Text>)
@@ -15,7 +15,7 @@ const PlanetDescription = ({planetDetail}) =>{
     }
     return(
         <Wrapper direction={"column"} >
-            <Title>{earth.name}</Title>
+            <Title>{currentPlanet}</Title>
             {textRender(planetDetail)}
               <Wrapper >
                   <Text style={{opacity:"0.5", mixBlend: "normal"}}>Source:</Text> <Link>Wiki <TiArrowRightThick style={{position:"relative", top:"3px", left:"1px", width:"15px", height: "15px"}}/> </Link>
