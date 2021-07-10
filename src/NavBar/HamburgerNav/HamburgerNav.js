@@ -4,14 +4,14 @@ import {NavigationBurger} from "../NavigationBurger";
 import {NavTitle} from "./NavTitle";
 import {Divider} from "../Divider";
 
-const HamburgerNav = ()=>{
+const HamburgerNav = (props)=>{
 
     const [isBurgerOpen, setIsBurgerOpen]= useState(false);
     return(
         <>
             <NavigationBurger>
                 <NavTitle>THE PLANETS</NavTitle>
-                <Burger open={isBurgerOpen} onClick={()=> setIsBurgerOpen(!isBurgerOpen)}>
+                <Burger open={isBurgerOpen} onClick={()=> props.changeModalState(!isBurgerOpen)}>
                     <div />
                     <div />
                     <div />

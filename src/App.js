@@ -5,21 +5,25 @@ import SubNavBar from "./NavBar/SubNavBar/SubNavBar";
 import Dots from "./Dots";
 import MainSection from "./MainSection/MainSection";
 import PlanetSubDetails from "./PlanetSubDetails/PlanetSubDetails";
+import ConditionalSidebar from "./conditionalSidebar/ConditionalSidebar";
 const App = () =>{
     const [planetDetails, setPlanetDetails]= useState('overview');
     const [currentPlanet, setCurretPlanet]= useState('earth');
+    const [isSidebarOpen, setIsSidebarOpen]= useState(false);
   return(
       <>
          < Dots />
           <GlobalStyles/>
-              <HamburgerNav/>
+              <HamburgerNav changeModalState={()=>setIsSidebarOpen()}/>
               <SubNavBar
                   planetDetail={(planetD)=>setPlanetDetails(planetD)}
                   userDecision={planetDetails}
                   currentPlanet={currentPlanet}
+
               />
               <MainSection planetDetail={planetDetails} currentPlanet={currentPlanet}/>
               <PlanetSubDetails/>
+          <ConditionalSidebar isSidebarOpen={isSidebarOpen}/>
       </>
   )
 }
