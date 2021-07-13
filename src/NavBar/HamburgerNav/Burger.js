@@ -1,7 +1,7 @@
 import styled from "styled-components"
 
 export const Burger = styled.button`
-  position: relative;
+  position: ${props => props.open ? "fixed": "relative"};
   display: flex;
   flex-direction: column;
   cursor: pointer;
@@ -11,7 +11,7 @@ export const Burger = styled.button`
   background: transparent;
   justify-content: space-around;
   border: none;
-  left: 1rem;
+  left:  ${props => props.open ? "75%": "0"};
   margin-top: 3em;
   margin-right: 1em;
   z-index: 1000;

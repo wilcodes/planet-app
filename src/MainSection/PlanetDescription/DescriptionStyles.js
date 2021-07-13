@@ -37,7 +37,7 @@ export const Link = styled.a`
 `
 
 export const Text = styled.p`
-  font-family: "Spartan";
+  font-family: "Spartan",serif;
   font-style: normal;
   font-weight: normal;
   font-size: 11px;

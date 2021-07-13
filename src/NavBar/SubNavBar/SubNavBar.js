@@ -3,7 +3,7 @@ import {NavigationBurger} from "../NavigationBurger";
 import {Divider} from "../Divider";
 import {Element} from "./Element";
 import {ColorIndicator} from "./ColorIndicator";
-
+import HamburgerNav from "../HamburgerNav/HamburgerNav";
 
 
 const SubNavBar = (props) =>{
@@ -13,6 +13,7 @@ const SubNavBar = (props) =>{
 
     return(
         <>
+            <HamburgerNav/>
             <NavigationBurger navType="subNavigation" >
                 <Element onClick={()=>props.planetDetail("overview")}>
                     Overview

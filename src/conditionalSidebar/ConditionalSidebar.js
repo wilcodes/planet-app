@@ -3,7 +3,7 @@ import Dots from "../Dots";
 import {Divider} from "../NavBar/Divider";
 import {SidebarStyles} from "./SidebarStyles";
 import {NavTitle} from "../NavBar/HamburgerNav/NavTitle";
-
+import PlanetsLink from "./PlanetsLink/PlanetLink";
 
 const ConditionalSidebar = (props) => (
         <>
@@ -11,7 +11,8 @@ const ConditionalSidebar = (props) => (
                 <NavTitle style={{marginLeft:"1em"}}>THE PLANETS</NavTitle>
                 <Dots/>
                 <Divider/>
-            </SidebarStyles>
+               <PlanetsLink/>
+        </SidebarStyles>
     </>
     )
 

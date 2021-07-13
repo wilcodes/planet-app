@@ -13,7 +13,7 @@ const HamburgerNav = (props)=>{
         <>
             <NavigationBurger>
                 <NavTitle>THE PLANETS</NavTitle>
-                <Burger open={isBurgerOpen} onClick={()=> setIsBurgerOpen(!isBurgerOpen)}>
+                <Burger open={isBurgerOpen} onClick={()=> setIsBurgerOpen(!isBurgerOpen)} >
                     <div />
                     <div />
                     <div />
