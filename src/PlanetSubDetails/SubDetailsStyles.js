@@ -1,6 +1,7 @@
 import styled from "styled-components";
 
 export const List = styled.ul`
+  
   list-style: none;
   display: flex; 
   flex-direction: ${props => props.direction ==="column"? "column": "row"};
@@ -13,6 +14,7 @@ export const List = styled.ul`
 `
 
 export const Element = styled.li`
+  
   font-family: ${props=> props.type === "number"? "Antonio": "Spartan"};
   font-style: normal;
   font-weight:${props=> props.type === "number"? "normal": "bold"} ;
@@ -27,5 +29,7 @@ export const Element = styled.li`
 
 `
 
-export const Wrapper = styled.div``
+export const Wrapper = styled.div`
+
+`
 

@@ -6,8 +6,8 @@ const PlanetLink = (props)=>(
   <>
       <FlexWrapper>
           <FlexWrapper>
-              <BulletedDot color={props.color}/>
-              <Planet>{props.name}</Planet>
+              <BulletedDot color={props.colorHex}/>
+              <Planet>{props.planet}</Planet>
           </FlexWrapper>
           <MdKeyboardArrowRight
               style={

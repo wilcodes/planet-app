@@ -9,11 +9,36 @@ export const earth = {
 
     export const planets = [
         {
-            name:"earth",
+            name:"Mercury",
+            color:"#DEF4FC"
+        },
+        {
+            name:"Venus",
+            color:"#F7CC7F"
+        },
+        {
+            name:"Earth",
             color:"#545BFE"
         },
         {
-            name:"Mercury",
-            color:"#DEF4FC"
+            name:"Mars",
+            color:"#FF6A45"
+        },
+        {
+            name:"Jupiter",
+            color:"#ECAD7A"
+        },
+        {
+            name:"Saturn",
+            color:"#FCCB6B"
+        },
+        {
+            name:"Uranus",
+            color:"#65F0D5"
+        },
+        {
+            name:"Neptune",
+            color:"#497EFA"
         }
+
     ]

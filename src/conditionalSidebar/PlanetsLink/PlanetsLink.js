@@ -2,17 +2,14 @@ import React from "react";
 import PlanetLink from "./PlanetLink";
 import {planets} from "../../planetsData/planetsData";
 
-const PlanetsLink = ()=>{
-    const renderingPlanets = (planets)=>{
-      return planets.map((el, i)=>(
-           <PlanetLink name={planets.name} color={planets.color} key={i}/>
-        ))
-    }
-    return(
-        <>
-            {renderingPlanets(planets)}
-        </>
-    )
-};
+const PlanetsLink = ()=>(
+    <>
+        { planets.map((el,i)=>(
+            <PlanetLink planet={el.name} colorHex={el.color} key={i}/>
+        ))}
+    </>
+)
+
+
 
 export default PlanetsLink;

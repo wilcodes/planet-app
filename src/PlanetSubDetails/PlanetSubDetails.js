@@ -3,7 +3,7 @@ import {List, Element, Wrapper, Text} from "./SubDetailsStyles";
 
 const PlanetSubDetails =()=> {
     return(
-        <Wrapper>
+        <Wrapper >
             <List direction="column">
                 <List>
                     <Element>

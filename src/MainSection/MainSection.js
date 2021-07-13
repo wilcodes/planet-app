@@ -4,7 +4,7 @@ import PlanetImage from "./PlanetImage/PlanetImage";
 import PlanetDescription from "./PlanetDescription/PlanetDescription";
 const MainSection = (props) =>{
     return(
-        <BoxWrapper>
+        <BoxWrapper >
             <PlanetImage planetDetail={props.planetDetail} currentPlanet={props.currentPlanet} />
             <PlanetDescription planetDetail={props.planetDetail} currentPlanet={props.currentPlanet}/>
         </BoxWrapper>
