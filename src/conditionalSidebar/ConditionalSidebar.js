@@ -1,25 +1,19 @@
 import React from "react";
-import SubNavBar from "../NavBar/SubNavBar/SubNavBar";
 import Dots from "../Dots";
 import {Divider} from "../NavBar/Divider";
 import {SidebarStyles} from "./SidebarStyles";
-import HamburgerNav from "../NavBar/HamburgerNav/HamburgerNav";
+import {NavTitle} from "../NavBar/HamburgerNav/NavTitle";
 
-const ConditionalSidebar = (props) => {
-    const isSideBarActive = () =>{
-        if (props.isSidebarOpen) {
-            return (<SidebarStyles>
-                <HamburgerNav/>
+
+const ConditionalSidebar = (props) => (
+        <>
+            <SidebarStyles isModalOpen={props.isModalOpen}>
+                <NavTitle style={{marginLeft:"1em"}}>THE PLANETS</NavTitle>
                 <Dots/>
                 <Divider/>
-            </SidebarStyles>)
-        }
-    }
-    return(<>
-            {isSideBarActive()}
+            </SidebarStyles>
     </>
+    )
 
-    );
-}
 
 export default ConditionalSidebar;

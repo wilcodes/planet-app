@@ -6,6 +6,8 @@ export const SidebarStyles = styled.section`
   width:100%;
   top: 0;
   box-sizing: border-box;
-  transition: all 0.3s ease-out;
   height: 100vh;
+  background-color: #070724;
+  transform: ${ props  => props.isModalOpen ? 'translateX(0)' : 'translateX(-100%)'};
+  transition: transform 0.3s ease-in;
 `
