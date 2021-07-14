@@ -16,6 +16,7 @@ export const Planet = styled.div`
   text-align: justify;
   margin-bottom: 1em;
   margin-left: 1em;
+  text-transform: uppercase;
 `
 export const BulletedDot = styled.div `
   position: relative;

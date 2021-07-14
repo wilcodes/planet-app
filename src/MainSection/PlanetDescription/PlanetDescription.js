@@ -3,14 +3,14 @@ import {Title, Text, Link, Wrapper} from "./DescriptionStyles"
 import { TiArrowRightThick } from "react-icons/ti";
 import {earth} from "../../planetsData/planetsData";
 
-const PlanetDescription = ({planetDetail, currentPlanet}) =>{
+const PlanetDescription = ({planetDetail, currentPlanet,planet}) =>{
     const textRender=(userChoice)=>{
         if (userChoice==="overview"){
-            return(<Text>{earth.overview}</Text>)
+            return(<Text>{planet.overview}</Text>)
         }else if(userChoice ==="surface"){
-            return(<Text>{earth.surface}</Text>)
+            return(<Text>{planet.surface}</Text>)
         }else if (userChoice === "structure"){
-            return(<Text>{earth.internalStructure}</Text>)
+            return(<Text>{planet.internalStructure}</Text>)
         }
     }
     return(

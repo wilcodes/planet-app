@@ -5,8 +5,8 @@ import PlanetDescription from "./PlanetDescription/PlanetDescription";
 const MainSection = (props) =>{
     return(
         <BoxWrapper >
-            <PlanetImage planetDetail={props.planetDetail} currentPlanet={props.currentPlanet} />
-            <PlanetDescription planetDetail={props.planetDetail} currentPlanet={props.currentPlanet}/>
+            <PlanetImage planetDetail={props.planetDetail} currentPlanet={props.currentPlanet} planet={props.planet}/>
+            <PlanetDescription planetDetail={props.planetDetail} currentPlanet={props.currentPlanet} planet={props.planet}/>
         </BoxWrapper>
     )
 }

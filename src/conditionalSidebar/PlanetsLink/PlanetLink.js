@@ -2,8 +2,11 @@ import React from "react";
 import {Divider} from "../../NavBar/Divider";
 import { MdKeyboardArrowRight } from "react-icons/md";
 import {FlexWrapper, Planet, BulletedDot} from "./PlanetStyles";
+import { Link } from "react-router-dom";
 const PlanetLink = (props)=>(
+
   <>
+      <Link to={props.planet} style={{textDecoration:"none"}}>
       <FlexWrapper>
           <FlexWrapper>
               <BulletedDot color={props.colorHex}/>
@@ -23,6 +26,7 @@ const PlanetLink = (props)=>(
           </MdKeyboardArrowRight>
       </FlexWrapper>
       <Divider/>
+      </Link>
   </>
 );
 

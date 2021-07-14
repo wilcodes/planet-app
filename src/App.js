@@ -1,28 +1,33 @@
-import React, {useState} from "react";
+import React from "react";
+import {Route, Switch} from 'react-router-dom';
 import {GlobalStyles} from "./GlobalStyles";
-import SubNavBar from "./NavBar/SubNavBar/SubNavBar";
-import Dots from "./Dots";
-import MainSection from "./MainSection/MainSection";
-import PlanetSubDetails from "./PlanetSubDetails/PlanetSubDetails";
+import Earth from "./Planets/Earth";
+import Mercury from "./Planets/Mercury";
+import Neptune from "./Planets/Neptune"
+import Saturn from "./Planets/Saturn";
+import Mars from "./Planets/Mars";
+import Uranus from "./Planets/Uranus";
+import Venus from "./Planets/Venus";
+import Jupiter from "./Planets/Jupiter";
 
-const App = () =>{
-    const [planetDetails, setPlanetDetails]= useState('overview');
-    const [currentPlanet]= useState('earth');
+const App=()=>{
+    return (
+        <>
+            <GlobalStyles/>
+            <Switch>
+                <Route path="/" exact component={Earth}/>
+                <Route path="/earth" exact component={Earth}/>
+                <Route path="/mercury" exact component={Mercury}/>
+                <Route path="/neptune" exact component={Neptune}/>
+                <Route path="/mars" exact component={Mars}/>
+                <Route path="/saturn" exact component={Saturn}/>
+                <Route path="/uranus" exact component={Uranus}/>
+                <Route path="/venus" exact component={Venus}/>
+                <Route path="/jupiter" exact component={Jupiter}/>
+            </Switch>
+        </>
 
-  return(
-      <>
-         < Dots />
-          <GlobalStyles/>
-              <SubNavBar
-                  planetDetail={(planetD)=>setPlanetDetails(planetD)}
-                  userDecision={planetDetails}
-                  currentPlanet={currentPlanet}
-
-              />
-              <MainSection planetDetail={planetDetails} currentPlanet={currentPlanet}/>
-              <PlanetSubDetails/>
-
-      </>
-  )
+    );
 }
+
 export default App;

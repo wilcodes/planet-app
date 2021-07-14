@@ -24,7 +24,7 @@ const PlanetImage = (props)=> {
         (<Image
             src={planetEarth_surface}
             alt={"structure"}
-            style={{width:"70px", height: "70px", zIndex:"999"}}/>)}
+            style={{width:"70px", height: "70px", zIndex:"99"}}/>)}
     </>
     )
 

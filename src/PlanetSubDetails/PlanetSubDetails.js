@@ -1,5 +1,5 @@
 import React from "react";
-import {List, Element, Wrapper, Text} from "./SubDetailsStyles";
+import {List, Element, Wrapper} from "./SubDetailsStyles";
 
 const PlanetSubDetails =()=> {
     return(
