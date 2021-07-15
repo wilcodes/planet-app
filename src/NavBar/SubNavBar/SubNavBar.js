@@ -1,4 +1,4 @@
-import React, {useState, useContext} from "react";
+import React, {useState} from "react";
 import {NavigationBurger} from "../NavigationBurger";
 import {Divider} from "../Divider";
 import {Element} from "./Element";

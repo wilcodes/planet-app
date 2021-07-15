@@ -1,7 +1,6 @@
 import React from "react";
 import {Title, Text, Link, Wrapper} from "./DescriptionStyles"
 import { TiArrowRightThick } from "react-icons/ti";
-import {earth} from "../../planetsData/planetsData";
 
 const PlanetDescription = ({planetDetail, currentPlanet,planet}) =>{
     const textRender=(userChoice)=>{

@@ -1,41 +1,41 @@
 import React from "react";
 import {List, Element, Wrapper} from "./SubDetailsStyles";
 
-const PlanetSubDetails =()=> {
+const PlanetSubDetails =({planet})=> {
     return(
         <Wrapper >
             <List direction="column">
                 <List>
                     <Element>
-                        Rotation Time
+                        {planet.characteristics.rotationTime.title}
                     </Element>
                     <Element type={"number"}>
-                        58.6 DAYS
+                        {planet.characteristics.rotationTime.description}
                     </Element>
                 </List>
 
                 <List>
                     <Element>
-                        Revolution Time
+                        {planet.characteristics.revolutionTime.title}
                     </Element>
                     <Element type={"number"}>
-                        87.97 DAYS
+                        {planet.characteristics.revolutionTime.description}
                     </Element>
                 </List>
                 <List>
                     <Element>
-                        Radius
+                        {planet.characteristics.radius.title}
                     </Element>
                     <Element type={"number"}>
-                        2,439.7 KM
+                        {planet.characteristics.radius.description}
                     </Element>
                 </List>
                 <List>
                     <Element>
-                        Average Temp
+                        {planet.characteristics.averageTemp.title}
                     </Element>
                     <Element type={"number"}>
-                        430ºC
+                        {planet.characteristics.averageTemp.description}
                     </Element>
                 </List>
             </List>

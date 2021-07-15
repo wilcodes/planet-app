@@ -6,7 +6,25 @@ export const earth = {
         internalStructure: "Earth's interior, like that of the other terrestrial Planets, is divided into layers by their chemical or physical (rheological) properties." +
             " The outer layer is a chemically distinct silicate solid crust, which is underlain by a highly viscous solid mantle.",
         surface:"The total surface area of Earth is about 510 million km2. " +
-            "The continental crust consists of lower density material such as the igneous rocks granite and andesite. Less common is basalt, a denser volcanic rock that is the primary constituent of the ocean floors."
+            "The continental crust consists of lower density material such as the igneous rocks granite and andesite. Less common is basalt, a denser volcanic rock that is the primary constituent of the ocean floors.",
+        characteristics: {
+            rotationTime:{
+                title: "Rotation Time",
+                description: "0.99 Days"
+            },
+            revolutionTime:{
+                title:"Revolution Time",
+                description:"365.26 Days"
+            },
+            radius:{
+                title: "Radius",
+                description: "6,371 KM"
+            },
+            averageTemp:{
+                title:"Average Temp",
+                description:"16°C"
+            }
+        }
 
 
     }
@@ -20,6 +38,24 @@ export const mercury = {
         "Like that of Earth, Venusian core is most likely at least partially liquid because the two planets have been cooling at about the same rate.",
     surface:"Much of the Venusian surface appears to have been shaped by volcanic activity. " +
         "Venus has several times as many volcanoes as Earth, and it has 167 large volcanoes that are over 100 km (60 mi) across. The only volcanic complex of this size on Earth is the Big Island of Hawaii.",
+    characteristics: {
+        rotationTime:{
+            title: "Rotation Time",
+            description: "58.6 Days"
+        },
+        revolutionTime:{
+            title:"Revolution Time",
+            description:"87.97 Days"
+        },
+        radius:{
+            title: "Radius",
+            description: "2,439.7 KM"
+        },
+        averageTemp:{
+            title:"Average Temp",
+            description:"430°C"
+        }
+    }
 }
 export const venus = {
     name:"venus",
@@ -30,7 +66,26 @@ export const venus = {
         "a core, mantle, and crust. Like that of Earth, " +
         "Venusian core is most likely at least partially liquid because the two planets have been cooling at about the same rate.",
     surface:"Much of the Venusian surface appears to have been shaped by volcanic activity. Venus has several times as many volcanoes as Earth, " +
-        "and it has 167 large volcanoes that are over 100 km (60 mi) across. The only volcanic complex of this size on Earth is the Big Island of Hawaii."
+        "and it has 167 large volcanoes that are over 100 km (60 mi) across. The only volcanic complex of this size on Earth is the Big Island of Hawaii.",
+    characteristics: {
+        rotationTime:{
+            title: "Rotation Time",
+            description: "243 Days"
+        },
+        revolutionTime:{
+            title:"Revolution Time",
+            description:"224.7 Days"
+        },
+        radius:{
+            title: "Radius",
+            description: "6,051.8 KM"
+        },
+        averageTemp:{
+            title:"Average Temp",
+            description:"471°C"
+        }
+    }
+
 }
 export const mars = {
     name:"mars",
@@ -41,7 +96,25 @@ export const mars = {
         "Current models of its interior imply a core consisting primarily of iron and nickel with about 16–17% sulfur. " +
         "Venusian core is most likely at least partially liquid because the two planets have been cooling at about the same rate.",
     surface:"Mars is a terrestrial planet whose surface consists of minerals containing silicon and oxygen, metals, and other elements that typically make up rock. " +
-        "The surface is primarily composed of tholeiitic basalt, although parts are more silica-rich than typical basalt."
+        "The surface is primarily composed of tholeiitic basalt, although parts are more silica-rich than typical basalt.",
+    characteristics: {
+        rotationTime:{
+            title: "Rotation Time",
+            description: "1.03 Days"
+        },
+        revolutionTime:{
+            title:"Revolution Time",
+            description:"1.88 Years"
+        },
+        radius:{
+            title: "Radius",
+            description: "3,389.5 KM"
+        },
+        averageTemp:{
+            title:"Average Temp",
+            description:"-28°C"
+        }
+    }
 }
 
 export const jupiter = {
@@ -53,7 +126,25 @@ export const jupiter = {
         "A possible cause is an impact from a planet of about ten Earth masses a few million years after Jupiter's formation, " +
         "which would have disrupted an originally solid Jovian core.",
     surface:"The best known feature of Jupiter is the Great Red Spot, a persistent anticyclonic storm located 22° south of the equator. " +
-        "It is known to have existed since at least 1831, and possibly since 1665."
+        "It is known to have existed since at least 1831, and possibly since 1665.",
+    characteristics: {
+        rotationTime:{
+            title: "Rotation Time",
+            description: "9.93 hours"
+        },
+        revolutionTime:{
+            title:"Revolution Time",
+            description:"11.86 years"
+        },
+        radius:{
+            title: "Radius",
+            description: "69,911 KM"
+        },
+        averageTemp:{
+            title:"Average Temp",
+            description:"-108°C"
+        }
+    }
 }
 
 export const uranus = {
@@ -65,7 +156,25 @@ export const uranus = {
         "The core is relatively small, with a mass of only 0.55 Earth masses.",
     surface:"The composition of Uranus's atmosphere is different from its bulk, consisting mainly of molecular hydrogen and helium." +
         " The helium molar fraction, i.e. the number of helium atoms per molecule of gas, is 0.15±0.03 " +
-        "in the upper troposphere."
+        "in the upper troposphere.",
+    characteristics: {
+        rotationTime:{
+            title: "Rotation Time",
+            description: "17.2 hours"
+        },
+        revolutionTime:{
+            title:"Revolution Time",
+            description:"84 years"
+        },
+        radius:{
+            title: "Radius",
+            description: "25,362 Km"
+        },
+        averageTemp:{
+            title:"Average Temp",
+            description:"-195°C"
+        }
+    }
 }
 export const saturn = {
     name:"saturn",
@@ -77,7 +186,25 @@ export const saturn = {
         " which is reached at a radius containing 99.9% of Saturn's mass.",
     surface:"The outer atmosphere of Saturn contains 96.3% molecular hydrogen and 3.25% helium by volume. " +
         "The planet's most famous feature is its prominent ring system, which is composed mostly of ice particles " +
-        "with a smaller amount of rocky debris and dust. "
+        "with a smaller amount of rocky debris and dust. ",
+    characteristics: {
+        rotationTime:{
+            title: "Rotation Time",
+            description: "10.8 hours"
+        },
+        revolutionTime:{
+            title:"Revolution Time",
+            description:"29.46 years"
+        },
+        radius:{
+            title: "Radius",
+            description: "58,232 KM"
+        },
+        averageTemp:{
+            title:"Average Temp",
+            description:"-138°C"
+        }
+    }
 }
 
 export const neptune = {
@@ -89,7 +216,25 @@ export const neptune = {
         "Its atmosphere forms about 5% to 10% of its mass and extends perhaps 10% to 20% of the way towards the core. " +
         "Increasing concentrations of methane, ammonia and water are found in the lower regions.",
     surface:"Neptune's atmosphere is 80% hydrogen and 19% helium. A trace amount of methane is also present. " +
-        "Prominent absorption bands of methane exist at wavelengths above 600 nm, in the red and infrared portion of the spectrum."
+        "Prominent absorption bands of methane exist at wavelengths above 600 nm, in the red and infrared portion of the spectrum.",
+    characteristics: {
+        rotationTime:{
+            title: "Rotation Time",
+            description: "16.08 hours"
+        },
+        revolutionTime:{
+            title:"Revolution Time",
+            description:"164.79 years"
+        },
+        radius:{
+            title: "Radius",
+            description: "24,622 KM"
+        },
+        averageTemp:{
+            title:"Average Temp",
+            description:"-201°C"
+        }
+    }
 }
 
 

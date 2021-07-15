@@ -18,7 +18,7 @@ const Jupiter = () =>{
 
             />
             <MainSection planetDetail={planetDetails} currentPlanet={"jupiter"} planet={jupiter}/>
-            <PlanetSubDetails/>
+            <PlanetSubDetails planet={jupiter}/>
 
         </>
     )

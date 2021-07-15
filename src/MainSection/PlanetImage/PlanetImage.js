@@ -68,28 +68,21 @@ const planetDecision = (planet)=> {
     switch (planet){
         case ("earth"):
             return defineImage(props.currentPlanet, props.planetDetail,planetEarth,planetEarth_structure, planetEarth_surface)
-            break;
         case ("venus"):
             return defineImage(props.currentPlanet, props.planetDetail,planetVenus,planetVenus_structure, planetVenus_surface)
-            break;
         case ("uranus"):
             return defineImage(props.currentPlanet, props.planetDetail,planetUranus,planetUranus_structure, planetUranus_surface)
-            break;
         case ("neptune"):
             return defineImage(props.currentPlanet, props.planetDetail,planetNeptune,planetNeptune_structure, planetNeptune_surface)
-            break;
         case ("saturn"):
             return defineImage(props.currentPlanet, props.planetDetail,planetSaturn,planetSaturn_structure, planetSaturn_surface)
-            break;
+
         case ("jupiter"):
-            return defineImage(props.currentPlanet, props.planetDetail,planetSaturn,planetSaturn_structure, planetSaturn_surface)
-            break;
+            return defineImage(props.currentPlanet, props.planetDetail,planetJupiter,planetJupiter_structure, planetJupiter_surface)
         case ("mercury"):
             return defineImage(props.currentPlanet, props.planetDetail,planetMercury,planetMercury_structure, planetMercury_surface)
-        break;
         case ("mars"):
            return  defineImage(props.currentPlanet, props.planetDetail,planetMars, planetMars_structure, planetMars_surface)
-            break;
         default: return null
     }
 }
