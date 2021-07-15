@@ -24,9 +24,8 @@ export const earth = {
                 title:"Average Temp",
                 description:"16°C"
             }
-        }
-
-
+        },
+    color:"#545BFE"
     }
 
 export const mercury = {
@@ -55,7 +54,8 @@ export const mercury = {
             title:"Average Temp",
             description:"430°C"
         }
-    }
+    },
+    color:"#DEF4FC"
 }
 export const venus = {
     name:"venus",
@@ -84,7 +84,8 @@ export const venus = {
             title:"Average Temp",
             description:"471°C"
         }
-    }
+    },
+    color:"#F7CC7F"
 
 }
 export const mars = {
@@ -114,7 +115,8 @@ export const mars = {
             title:"Average Temp",
             description:"-28°C"
         }
-    }
+    },
+    color:"#FF6A45"
 }
 
 export const jupiter = {
@@ -144,7 +146,8 @@ export const jupiter = {
             title:"Average Temp",
             description:"-108°C"
         }
-    }
+    },
+    color:"#ECAD7A"
 }
 
 export const uranus = {
@@ -174,7 +177,8 @@ export const uranus = {
             title:"Average Temp",
             description:"-195°C"
         }
-    }
+    },
+    color:"#65F0D5"
 }
 export const saturn = {
     name:"saturn",
@@ -204,7 +208,8 @@ export const saturn = {
             title:"Average Temp",
             description:"-138°C"
         }
-    }
+    },
+    color:"#FCCB6B"
 }
 
 export const neptune = {
@@ -234,7 +239,8 @@ export const neptune = {
             title:"Average Temp",
             description:"-201°C"
         }
-    }
+    },
+    color:"#497EFA"
 }
 
 

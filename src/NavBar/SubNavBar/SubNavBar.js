@@ -5,7 +5,6 @@ import {Element} from "./Element";
 import {ColorIndicator} from "./ColorIndicator";
 import HamburgerNav from "../HamburgerNav/HamburgerNav";
 
-
 const SubNavBar = (props) =>{
 
     const [currentInformation]= useState("overview")
@@ -17,7 +16,7 @@ const SubNavBar = (props) =>{
             <NavigationBurger navType="subNavigation" >
                 <Element onClick={()=>props.planetDetail("overview")}>
                     Overview
-                    {props.userDecision === "overview" && (<ColorIndicator active={currentInformation}/>)}
+                    {props.userDecision === "overview" && (<ColorIndicator active={currentInformation} color={props.planetColor}/>)}
                 </Element>
                 <Element onClick={()=>props.planetDetail("structure")} >
                     Structure

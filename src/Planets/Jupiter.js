@@ -15,7 +15,7 @@ const Jupiter = () =>{
                 planetDetail={(planetD)=>setPlanetDetails(planetD)}
                 userDecision={planetDetails}
                 currentPlanet={"jupiter"}
-
+                planetColor={jupiter.color}
             />
             <MainSection planetDetail={planetDetails} currentPlanet={"jupiter"} planet={jupiter}/>
             <PlanetSubDetails planet={jupiter}/>

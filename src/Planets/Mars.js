@@ -15,7 +15,7 @@ const Mars = () =>{
                 planetDetail={(planetD)=>setPlanetDetails(planetD)}
                 userDecision={planetDetails}
                 currentPlanet={"mars"}
-
+                planetColor={mars.color}
             />
             <MainSection planetDetail={planetDetails} currentPlanet={"mars"} planet={mars}/>
             <PlanetSubDetails planet={mars}/>
