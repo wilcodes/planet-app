@@ -1,36 +1,103 @@
 import React from "react";
 import {Image} from "./Image";
+
 import planetEarth from "../../assets/planet-earth.svg";
 import planetEarth_structure from "../../assets/planet-earth-internal.svg";
 import planetEarth_surface from "../../assets/geology-earth.png";
-const PlanetImage = (props)=> {
-    const defineImage = (planet, details)=>{
-        if (details==="overview" || details === "surface"){
-            return(
-                <Image src={planetEarth} alt={planet}/>
-            )
-        }else if (details==="structure"){
-            return(
-                <Image src={planetEarth_structure} alt={planet} />
-                )
 
+import planetMercury from "../../assets/planet-mercury.svg"
+import planetMercury_structure from "../../assets/planet-mercury-internal.svg";
+import planetMercury_surface from "../../assets/geology-mercury.png"
+
+import planetMars from "../../assets/planet-mars.svg"
+import planetMars_structure from "../../assets/planet-mars-internal.svg";
+import planetMars_surface from "../../assets/geology-mars.png";
+
+import planetVenus from "../../assets/planet-venus.svg";
+import planetVenus_structure from "../../assets/planet-venus-internal.svg";
+import planetVenus_surface from "../../assets/geology-venus.png";
+
+import planetUranus from "../../assets/planet-uranus.svg";
+import planetUranus_structure from "../../assets/planet-uranus-internal.svg";
+import planetUranus_surface from "../../assets/geology-uranus.png";
+
+import planetNeptune from "../../assets/planet-neptune.svg";
+import planetNeptune_structure from "../../assets/planet-neptune-internal.svg";
+import planetNeptune_surface from "../../assets/geology-neptune.png";
+
+import planetSaturn from "../../assets/planet-saturn.svg";
+import planetSaturn_structure from "../../assets/planet-saturn-internal.svg";
+import planetSaturn_surface from "../../assets/geology-saturn.png";
+
+import planetJupiter from "../../assets/planet-jupiter.svg";
+import planetJupiter_structure from "../../assets/planet-jupiter-internal.svg";
+import planetJupiter_surface from "../../assets/geology-jupiter.png";
+
+
+
+
+const PlanetImage = (props)=> {
+
+
+    const defineImage = (planet, details,src1, src2, src3)=>{
+
+                if (details==="overview" ){
+                    return(
+                        <Image src={src1} alt={planet}/>
+                    )
+                }else if (details==="structure"){
+                    return(
+                        <Image src={src2} alt={planet} />
+                    )
+
+                }else if ( details === "surface"){
+                    return (
+                            <>
+                                <Image src={src1} alt={planet}/>
+                                <Image
+                                src={src3}
+                                alt={"structure"}
+                                style={{width:"70px", height: "70px", zIndex:"99"}}/>
+                             </>
+
+                    )
+                }
         }
+
+const planetDecision = (planet)=> {
+    switch (planet){
+        case ("earth"):
+            return defineImage(props.currentPlanet, props.planetDetail,planetEarth,planetEarth_structure, planetEarth_surface)
+            break;
+        case ("venus"):
+            return defineImage(props.currentPlanet, props.planetDetail,planetVenus,planetVenus_structure, planetVenus_surface)
+            break;
+        case ("uranus"):
+            return defineImage(props.currentPlanet, props.planetDetail,planetUranus,planetUranus_structure, planetUranus_surface)
+            break;
+        case ("neptune"):
+            return defineImage(props.currentPlanet, props.planetDetail,planetNeptune,planetNeptune_structure, planetNeptune_surface)
+            break;
+        case ("saturn"):
+            return defineImage(props.currentPlanet, props.planetDetail,planetSaturn,planetSaturn_structure, planetSaturn_surface)
+            break;
+        case ("jupiter"):
+            return defineImage(props.currentPlanet, props.planetDetail,planetSaturn,planetSaturn_structure, planetSaturn_surface)
+            break;
+        case ("mercury"):
+            return defineImage(props.currentPlanet, props.planetDetail,planetMercury,planetMercury_structure, planetMercury_surface)
+        break;
+        case ("mars"):
+           return  defineImage(props.currentPlanet, props.planetDetail,planetMars, planetMars_structure, planetMars_surface)
+            break;
+        default: return null
     }
+}
 
     return(
         <>
-        {defineImage(props.currentPlanet, props.planetDetail)}
-        {props.planetDetail === "surface" &&
-        (<Image
-            src={planetEarth_surface}
-            alt={"structure"}
-            style={{width:"70px", height: "70px", zIndex:"99"}}/>)}
-    </>
+            {planetDecision(props.currentPlanet)}
+        </>
     )
-
-
 }
-
-
-
 export default PlanetImage;
