@@ -39,4 +39,12 @@ export const Burger = styled.button`
       transform: ${({ open }) => open ? 'rotate(-41deg)' : 'rotate(0)'};
     }
   }
+
+  @media only screen and (min-width:700px) and (max-width: 1024px){
+    display: none;
+  }
+  @media only screen and (min-width: 1025px)  {
+    display: none;
+  }
+
 `
