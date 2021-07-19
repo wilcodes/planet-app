@@ -4,6 +4,8 @@ import {NavigationBurger} from "../NavigationBurger";
 import {NavTitle} from "./NavTitle";
 import {Divider} from "../Divider";
 import ConditionalSidebar from "../../conditionalSidebar/ConditionalSidebar";
+import PlanetsNav from "../PlanetsNav/PlanetsNav";
+import BigScreenNav from "../BigScreenNav/BigScreenNav";
 const HamburgerNav = (props)=>{
 
     const [isBurgerOpen, setIsBurgerOpen]= useState(false);
@@ -18,6 +20,7 @@ const HamburgerNav = (props)=>{
                     <div />
                     <div />
                 </Burger>
+                <BigScreenNav/>
             </NavigationBurger>
             <Divider/>
              <ConditionalSidebar isModalOpen={isBurgerOpen} />
