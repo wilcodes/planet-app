@@ -15,4 +15,8 @@ export const Element= styled.li`
   mix-blend-mode: normal;
   opacity: 0.5;
   cursor:pointer;
+  
+  &:hover{
+    opacity: 1;
+  }
 `

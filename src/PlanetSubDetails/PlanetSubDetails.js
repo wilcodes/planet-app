@@ -3,9 +3,8 @@ import {List, Element, Wrapper} from "./SubDetailsStyles";
 
 const PlanetSubDetails =({planet})=> {
     return(
-        <Wrapper >
-            <List direction="column">
-                <List>
+        <Wrapper direction="column">
+                <List >
                     <Element>
                         {planet.characteristics.rotationTime.title}
                     </Element>
@@ -38,7 +37,6 @@ const PlanetSubDetails =({planet})=> {
                         {planet.characteristics.averageTemp.description}
                     </Element>
                 </List>
-            </List>
         </Wrapper>
     )
 }

@@ -8,7 +8,17 @@ export const List = styled.ul`
   padding: 1em;
   border: ${props => props.direction ==="column"? "none": "0.5px solid #cccccc "};
   margin: 0.3em;
-  justify-content: space-between;
+  align-items: center;
+  
+
+  @media only screen and (min-width:700px) and (max-width: 1024px){
+    flex-direction: column;
+    flex: 0 0 20%;
+  }
+  @media only screen and (min-width: 1025px)  {
+    flex-direction: column;
+    flex: 0 0 16%;
+  }
   
   
 `
@@ -24,12 +34,31 @@ export const Element = styled.li`
   color: #FFFFFF;
   mix-blend-mode: normal;
   opacity:${props=> props.type === "number"? "1": "0.5"};
-  
+
+  @media only screen and (min-width:700px) and (max-width: 1024px){
+    flex-direction: row;
+  }
+  @media only screen and (min-width: 1025px)  {
+    flex-direction: row;
+  }
   
 
 `
 
 export const Wrapper = styled.div`
+  list-style: none;
+  display: flex;
+  flex-direction: ${props => props.direction ==="column"? "column": "row"};
+  padding: 1em;
+  border: ${props => props.direction ==="column"? "none": "0.5px solid #cccccc "};
+  margin: 0.3em;
+  justify-content: space-between;
 
+  @media only screen and (min-width:700px) and (max-width: 1024px){
+    flex-direction: row;
+  }
+  @media only screen and (min-width: 1025px)  {
+    flex-direction: row;
+  }
 `
 
