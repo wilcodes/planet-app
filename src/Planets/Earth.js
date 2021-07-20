@@ -20,7 +20,10 @@ const Earth = () =>{
                   planetColor={earth.color}
 
               />
-              <MainSection planetDetail={planetDetails} currentPlanet={"earth"} planet={earth}/>
+              <MainSection planetDetail={planetDetails}
+                           currentPlanet={"earth"}
+                           planet={earth}
+                           planetDetails={(planetD)=>setPlanetDetails(planetD)}/>
               <PlanetSubDetails planet={earth}/>
 
       </>

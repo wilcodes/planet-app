@@ -17,7 +17,11 @@ const Neptune = () =>{
                 currentPlanet={"neptune"}
                 planetColor={neptune.color}
             />
-            <MainSection planetDetail={planetDetails} currentPlanet={"neptune"} planet={neptune}/>
+            <MainSection planetDetail={planetDetails}
+                         currentPlanet={"neptune"}
+                         planet={neptune}
+                         planetDetails={(planetD)=>setPlanetDetails(planetD)}
+            />
             <PlanetSubDetails planet={neptune}/>
 
         </>

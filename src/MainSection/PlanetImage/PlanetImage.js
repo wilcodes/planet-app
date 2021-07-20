@@ -42,8 +42,10 @@ const PlanetImage = (props)=> {
     const defineImage = (planet, details,src1, src2, src3)=>{
 
                 if (details==="overview" ){
-                    return(
-                        <Image src={src1} alt={planet}/>
+                    return(<div style={{margin:"0 auto"}}>
+                            <Image src={src1} alt={planet}/>
+                    </div>
+
                     )
                 }else if (details==="structure"){
                     return(
@@ -88,9 +90,11 @@ const planetDecision = (planet)=> {
 }
 
     return(
-        <>
-            {planetDecision(props.currentPlanet)}
-        </>
+       <>
+           {planetDecision(props.currentPlanet)}
+       </>
+
+
     )
 }
 export default PlanetImage;

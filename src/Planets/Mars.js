@@ -17,7 +17,11 @@ const Mars = () =>{
                 currentPlanet={"mars"}
                 planetColor={mars.color}
             />
-            <MainSection planetDetail={planetDetails} currentPlanet={"mars"} planet={mars}/>
+            <MainSection planetDetail={planetDetails}
+                         currentPlanet={"mars"}
+                         planet={mars}
+                         planetDetails={(planetD)=>setPlanetDetails(planetD)}
+            />
             <PlanetSubDetails planet={mars}/>
 
         </>
