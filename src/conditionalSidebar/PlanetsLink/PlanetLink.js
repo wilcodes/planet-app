@@ -6,14 +6,14 @@ import { Link } from "react-router-dom";
 const PlanetLink = (props)=>(
 
   <>
-
+  <Link to={props.planet} style={{textDecoration:"none", color:"#FFFFFF"}} >
       <FlexWrapper>
-          <Link to={props.planet} style={{textDecoration:"none"}}>
+
             <FlexWrapper>
               <BulletedDot color={props.colorHex}/>
               <Planet>{props.planet}</Planet>
             </FlexWrapper>
-          </Link>
+
           <MdKeyboardArrowRight
               style={
                   {position:"relative",
@@ -26,7 +26,9 @@ const PlanetLink = (props)=>(
                       marginRight:"0.5em"
                   }}>
           </MdKeyboardArrowRight>
+
       </FlexWrapper>
+  </Link>
       <Divider/>
 
   </>
