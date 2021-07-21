@@ -9,20 +9,26 @@ export const ButtonWrapper = styled.ul`
   }
 `
 export const Button = styled.button`
-  opacity: 0.7;
+  opacity: 1;
   padding: 0.5em;
-  background-color: transparent;
+  background-color: ${props => props.userSelection};
   /* identical to box height, or 278% */
   margin: 1em;
-  border: 1px solid #ffffff ;
-  &:hover{
-  background-color: #6D2ED5;;
+  border: 1px solid #5b5b5b;
+
+  &:active {
+    background-color: #6D2ED5;;
     opacity: 1;
-}
-  @media only screen and (max-width: 700px){
-   display: none;
   }
-  
+  &:hover {
+    background-color: rgba(216, 216, 216, 1)
+   
+  }
+
+  @media only screen and (max-width: 700px) {
+    display: none;
+  }
+
 `
 export const Text = styled.p`
   opacity: 1;

@@ -55,7 +55,7 @@ export const mercury = {
             description:"430°C"
         }
     },
-    color:"#DEF4FC"
+    color:"#419EBB"
 }
 export const venus = {
     name:"venus",

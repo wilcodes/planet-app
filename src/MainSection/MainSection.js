@@ -9,7 +9,7 @@ const MainSection = (props) =>{
             <PlanetImage planetDetail={props.planetDetail} currentPlanet={props.currentPlanet} planet={props.planet} />
             <BoxContentWrapper  >
                 <PlanetDescription planetDetail={props.planetDetail} currentPlanet={props.currentPlanet} planet={props.planet}/>
-                <UserSelection planetDetail={props.planetDetails} />
+                <UserSelection planetDetail={props.planetDetails} userSelection={props.planetDetail} planet={props.planet}/>
             </BoxContentWrapper>
 
         </BoxWrapper>
