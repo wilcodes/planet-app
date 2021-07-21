@@ -13,3 +13,24 @@ export const Image = styled.img`
     height: 400px;
   }
 `
+
+export const ImageTwo = styled.img`
+  width: 70px;
+  height: 70px;
+  @media only screen and (min-width:700px) and (max-width: 1024px){
+    width: 120px;
+    height: 100px;
+  }
+  @media only screen and (min-width: 1025px)  {
+    width: 199px;
+    height: 163px;
+    z-index: 99;
+  }
+`
+
+export const Wrapper = styled.div`
+display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+`

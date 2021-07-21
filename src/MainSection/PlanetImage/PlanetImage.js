@@ -1,5 +1,5 @@
 import React from "react";
-import {Image} from "./Image";
+import {Image, ImageTwo, Wrapper} from "./Image";
 
 import planetEarth from "../../assets/planet-earth.svg";
 import planetEarth_structure from "../../assets/planet-earth-internal.svg";
@@ -55,11 +55,14 @@ const PlanetImage = (props)=> {
                 }else if ( details === "surface"){
                     return (
                             <>
-                                <Image src={src1} alt={planet}/>
-                                <Image
-                                src={src3}
-                                alt={"structure"}
-                                style={{width:"70px", height: "70px", zIndex:"99"}}/>
+                                <Wrapper>
+                                    <Image src={src1} alt={planet}/>
+                                    <ImageTwo
+                                    src={src3}
+                                    alt={"structure"}
+                                    />
+                                </Wrapper>
+
                              </>
 
                     )

@@ -12,8 +12,8 @@ const SubNavBar = (props) =>{
 
     return(
         <>
-            <HamburgerNav/>
-            <PlanetsNav currentInformation={currentInformation}/>
+            <HamburgerNav currentPlanet={props.currentPlanet}/>
+            <PlanetsNav currentInformation={currentInformation} planet={props.currentPlanet}/>
             <NavigationBurger navType="subNavigation" active={false} >
                 <Element onClick={()=>props.planetDetail("overview")}>
                     Overview
