@@ -7,7 +7,12 @@ export const BoxWrapper = styled.div`
   align-items: center;
   margin-top: 3em;
   list-style: none;
-  
+  @media only screen and (min-width:700px) and (max-width: 1024px){
+    
+  }
+  @media only screen and (min-width: 1025px)  {
+    flex-direction: row;
+  }
   
 `
 
@@ -17,7 +22,10 @@ export const BoxContentWrapper = styled.div`
    flex-direction: row ;
    align-items: center;
   margin-top: 2em;
-
+  @media only screen and (min-width: 1025px)  {
+    flex-direction: column;
+    width: 50%;
+  }
  
   
   

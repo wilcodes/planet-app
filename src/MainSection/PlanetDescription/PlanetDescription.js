@@ -1,6 +1,5 @@
 import React from "react";
 import {Title, Text, Link, Wrapper} from "./DescriptionStyles"
-import { TiArrowRightThick } from "react-icons/ti";
 
 const PlanetDescription = ({planetDetail, currentPlanet,planet}) =>{
     const textRender=(userChoice)=>{
@@ -17,7 +16,11 @@ const PlanetDescription = ({planetDetail, currentPlanet,planet}) =>{
             <Title>{currentPlanet}</Title>
             {textRender(planetDetail)}
               <Wrapper >
-                  <Text style={{opacity:"0.5", mixBlend: "normal"}}>Source:</Text> <Link>Wiki <TiArrowRightThick style={{position:"relative", top:"3px", left:"1px", width:"15px", height: "15px"}}/> </Link>
+                  <Text style={{opacity:"0.5", mixBlend: "normal"}}>Source:
+                      <Link href={'https://en.wikipedia.org/wiki/Main_Page'} target="_blank">  Wikipedia</Link>
+
+                  </Text>
+
               </Wrapper>
         </Wrapper>
     )

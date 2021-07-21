@@ -7,6 +7,9 @@ export const ButtonWrapper = styled.ul`
   @media only screen and (max-width: 700px){
     width: 0;
   }
+  @media only screen and (min-width: 1025px)  {
+    width: 70%;
+  }
 `
 export const Button = styled.button`
   opacity: 1;
@@ -37,6 +40,7 @@ export const Text = styled.p`
   font-weight: bold;
   font-size: 9px;
   line-height: 25px;
+  
   /* identical to box height, or 278% */
 
   letter-spacing: 1.92857px;

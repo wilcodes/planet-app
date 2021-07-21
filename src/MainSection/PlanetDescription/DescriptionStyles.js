@@ -15,7 +15,7 @@ export const Title = styled.h1`
   @media only screen and (min-width: 1024px){
     font-size: 80px;
     line-height: 104px;
-    text-align: left;
+    text-align: center;
   }
   @media only screen and (min-width:700px) and (max-width: 1024px){
     font-size: 48px;
@@ -61,6 +61,13 @@ export const Link = styled.a`
     text-align: left;
     margin-top: 1.1em;
   }
+  @media only screen and (min-width: 1025px)  {
+    
+    font-size: 15px;
+    line-height: 25px;
+    margin: 0 auto;
+    text-align: left;
+  }
  
 `
 
@@ -70,7 +77,6 @@ export const Text = styled.p`
   font-weight: normal;
   font-size: 11px;
   line-height: 22px;
-  /* or 200% */
   color: #FFFFFF;
   text-align: justify;
 
@@ -81,5 +87,9 @@ export const Text = styled.p`
   @media only screen and (min-width: 1025px)  {
     font-size: 15px;
     line-height: 25px;
+    width: 80%;
+    margin: 10px auto;
+    text-align: left;
+    display: flex;
   }
 `
