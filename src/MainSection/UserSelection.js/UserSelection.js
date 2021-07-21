@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import React from "react";
 import {ButtonWrapper, Button, Text} from "./UserSelectionStyles";
 
 const UserSelection = (props) =>{

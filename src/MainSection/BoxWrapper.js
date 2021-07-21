@@ -5,11 +5,11 @@ export const BoxWrapper = styled.div`
   justify-content: space-around;
   flex-direction: column;
   align-items: center;
-  margin-top: 3em;
+  margin-top: 5em;
   list-style: none;
-  @media only screen and (min-width:700px) and (max-width: 1024px){
-    
-  }
+  margin-bottom: 0.5em;
+  
+  
   @media only screen and (min-width: 1025px)  {
     flex-direction: row;
   }
