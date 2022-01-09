@@ -42,9 +42,9 @@ const PlanetImage = (props)=> {
     const defineImage = (planet, details,src1, src2, src3)=>{
 
                 if (details==="overview" ){
-                    return(<div style={{margin:"0 auto"}}>
+                    return(
                             <Image src={src1} alt={planet}/>
-                    </div>
+
 
                     )
                 }else if (details==="structure"){
