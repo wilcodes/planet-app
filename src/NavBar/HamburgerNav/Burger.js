@@ -24,10 +24,10 @@ export const Burger = styled.button`
     background: ${({ open }) => open ? '#FFFFFF' : '#EFFFFA'};
     transition: all 0.3s linear;
     position: relative;
-    transform-origin: 1px;
+    transform-origin: 3.2px;
 
     :first-child {
-      transform: ${({ open }) => open ? 'rotate(36deg)' : 'rotate(0)'};
+      transform: ${({ open }) => open ? 'rotate(45deg)' : 'rotate(0)'};
     }
 
     :nth-child(2) {
@@ -36,7 +36,7 @@ export const Burger = styled.button`
     }
 
     :nth-child(3) {
-      transform: ${({ open }) => open ? 'rotate(-39deg)' : 'rotate(0)'};
+      transform: ${({ open }) => open ? 'rotate(-45deg)' : 'rotate(0)'};
     }
   }
 
